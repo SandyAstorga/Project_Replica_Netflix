@@ -50,6 +50,8 @@ html, body, .cover{
 
 .cover{
     background: url('../IMG/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 /* FONDO */
 
@@ -57,7 +59,7 @@ html, body, .cover{
 section.header{
     background: none;
     position: absolute;
-    top: -5px;
+    top: -6px;
     left: 0px;
     right: 0px;
     bottom: 0px;
@@ -108,14 +110,14 @@ div.login span{
     padding-left: 11px;
 }
 
-.presentation span{
+.presentation span, .contentQuestions span{
     background: #E50914;
     padding: 13px 15px ;
     border-radius: 0.25rem;
     margin-left: 9px;
 }
 
-.presentation span:hover{
+.presentation span:hover, .contentQuestions span:hover{
     cursor: pointer;
     background: rgb(174, 6, 6);
 }
@@ -124,7 +126,6 @@ div.login span{
 /* TV */
 .sideLeft{
     float: left;
-    
 }
 
 .sideRight{
@@ -132,11 +133,11 @@ div.login span{
 }
 
 .floatText{
-    width: 49%;
+    width: 50%;
 }
 
 .floatVideo{
-    width: 49%;
+    width: 50%;
 }
 
 .content img{
@@ -147,10 +148,10 @@ div.login span{
     z-index: 2;
 }
 
-.content h2{
+.content h2 {
     font-weight: bold;
     font-size: 50px;
-    margin-top: 20%;
+    padding-top: 20%;
 }
 
 .content p{
@@ -192,7 +193,116 @@ div.login span{
 
 .card{
     position: relative;
-    transform: translate(-22px, -48px);
+    transform: translate(-22px, -38px);
 }
 /* TV */
 
+/* QUESTIONS */
+.questions h2{
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.contentQuestions{
+    width: 700px;
+    margin: auto;
+    text-align: center;
+}
+
+.contentQuestions div{
+    text-align: left;
+    font-size: 20px;
+}
+
+.question{
+    background: #2D2D2D;
+    padding: 12px;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.answer{
+    background: #2D2D2D;
+    margin-top: 7px;
+    margin-bottom: 5px;
+}
+
+.question p, .answer p{
+    padding: 5px;
+    padding-left: 20px;
+}
+
+.question hr{
+    border: solid 1px black;
+}
+
+.question:hover{
+    background: #3c3c3c;
+}
+
+.question:hover .answer{
+    max-height: 500px;
+    background: #3c3c3c;
+}
+
+.answer{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .1s;
+}
+
+.question label{
+    position: absolute;
+    transform: translate(640px, -33px);
+}
+
+.contentQuestions input{
+    height: 45px;
+    width: 350px;
+    border-radius: 0.25rem;
+    background: transparent;
+    border: 0.3px solid #ffffff;
+    padding-left: 11px;
+    margin-top: 15px;
+}
+/* QUESTIONS */
+
+/* FOOTER */
+.column{
+    columns: 3 20px;
+    width: 930px;
+    margin: auto;
+}
+
+.column li{
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 300 ;
+    list-style:none;
+    padding-top: 7px;
+}
+
+.box{
+    background: #000000;
+    padding: 5px;
+    padding-left: 30px;
+    margin-top: 25px;
+    margin-left: 150px;
+    margin-bottom: 8px;
+    border-radius: 0.23rem;
+}
+
+.icono{
+    position: absolute;
+    transform: translate(158px, 29px);
+}
+
+.call, .textLast{
+    padding-left: 150px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+}
+/* FOOTER */
