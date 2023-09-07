@@ -1,0 +1,198 @@
+/* GENERAL */
+/* Aplica a todos los elementos se cambia el margin y padding por defecto */
+*{
+    margin: 0px;
+    padding: 0px;
+    color: #ffffff; 
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+}
+
+h1{
+    font-size: 4rem;
+    font-weight: 800;
+    padding-top: 15px;
+}
+
+h2{
+    font-size: 1.625rem;
+    padding-top: 10px;
+}
+
+h3{
+    font-size: 1.1rem;
+    padding-top: 15px;
+}
+
+section{
+    background: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin-top: 6px;
+}
+
+section div.content{
+    width: 1100px;
+    margin: auto;
+}
+
+.restaurar{
+    clear: both;
+}
+
+/* GENERAL */
+
+/* FONDO */
+html, body, .cover{
+    height: 100%;
+    background: gray;
+}
+
+.cover{
+    background: url('../IMG/fondo.jpg');
+}
+/* FONDO */
+
+/* CABECERA */
+section.header{
+    background: none;
+    position: absolute;
+    top: -5px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-image: linear-gradient(to top, 
+        rgba(0,0,0,0.9) 0, 
+        rgba(0,0,0,0.4) 60%, 
+        rgba(0,0,0,0.9) 100%);
+}
+nav{
+    margin: 0 3.5rem;
+    padding-top: 10px;
+}
+div.logo{
+    float: left;
+}
+
+div.login{
+    float: right;
+    padding-top: 10px;
+}
+
+div.login span:hover{
+    cursor: pointer;
+    background: rgb(174, 6, 6);
+}
+
+div.login span{
+    padding: 7px 16px;
+    background: #E50914;
+    border-radius: 4px;
+}
+
+.presentation{
+    text-align: center;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation input{
+    height: 45px;
+    width: 350px;
+    margin-top: 25px;
+    border-radius: 0.25rem;
+    background: transparent;
+    border: 0.3px solid #ffffff;
+    padding-left: 11px;
+}
+
+.presentation span{
+    background: #E50914;
+    padding: 13px 15px ;
+    border-radius: 0.25rem;
+    margin-left: 9px;
+}
+
+.presentation span:hover{
+    cursor: pointer;
+    background: rgb(174, 6, 6);
+}
+/* CABECERA */
+
+/* TV */
+.sideLeft{
+    float: left;
+    
+}
+
+.sideRight{
+    float: right;
+}
+
+.floatText{
+    width: 49%;
+}
+
+.floatVideo{
+    width: 49%;
+}
+
+.content img{
+    width: 100%;
+    height: auto;
+    border: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.content h2{
+    font-weight: bold;
+    font-size: 50px;
+    margin-top: 20%;
+}
+
+.content p{
+    font-weight: 500;
+    font-size: 21px;
+    /* padding-top: 15px; */
+}
+
+.tv video{
+    position: absolute;
+    transform: translate( -468px, 85px);
+    width: 392px;
+    z-index: 1;
+}
+
+.enjoy video{
+    position: absolute;
+    transform: translate( -437px, 44px);
+    width: 342px;
+    z-index: 1;
+}
+
+.cardInt, .portada{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardInt{
+    width: 70%;
+    margin: auto;
+    border: solid 2px rgba(128,128,128,0.7);
+    border-radius: 0.75rem;
+    padding: 4px;
+    position: relative;
+    z-index: 2;
+    background: #000000;
+}
+
+.card{
+    position: relative;
+    transform: translate(-22px, -48px);
+}
+/* TV */
+
